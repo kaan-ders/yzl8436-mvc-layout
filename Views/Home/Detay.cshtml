@@ -1,0 +1,29 @@
+﻿@{
+}
+
+@model Ogrenci
+
+<div class="row">
+    <div class="col-12">
+        <h1>Detay</h1>
+        <hr />
+    </div>
+    <div class="col-12 mt-3">
+        <div class="card">
+            <div class="card-header">
+                <b> @Model.AdiSoyadi </b>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>No: @Model.OgrenciNo</li>
+                    <li>Kayıt tarihi: @Model.KayitTarihi</li>
+                    <li>Adres: @Model.Adres</li>
+                </ul>
+            </div>
+            <div class="card-footer text-end">
+                <a href="/Ogrenci/Sil/@Model.Id" class="btn btn-danger">Sil</a>
+                <a href="/Ogrenci/Guncelle/@Model.Id" class="btn btn-secondary">Güncelle</a>
+            </div>
+        </div>
+    </div>
+</div>
